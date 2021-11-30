@@ -1,0 +1,6 @@
+<div class="card my-3" >
+    <input type="text" name="title"  class="form-control card-header "   placeholder="Title" #newTitleInput>
+    <textarea id="card-content" name="content" class="form-control"  #newContentInput aria-label="Content" placeholder="Content"></textarea>
+    <fa-icon class="fs-5 text-center" [icon]="faPlusSquare" (click)="generateCard()"></fa-icon>
+
+</div>

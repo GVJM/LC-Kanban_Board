@@ -1,0 +1,24 @@
+<div class="container-fluid ">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+      <div class="col border pt-3">
+        <h2 class="text-center fs-5">New</h2>
+        <hr>
+        <app-new-card></app-new-card>
+      </div>
+      <div class="col border pt-3">
+        <h2 class="text-center fs-5">To Do</h2>
+        <hr>
+        <app-card *ngFor="let card of updateBoard.lists.toDo" [title]="card.titulo" [content]="card.conteudo" [list]="card.lista" [id]="card.id"></app-card>
+      </div>
+      <div class="col border pt-3">
+        <h2 class="text-center fs-5">Doing</h2>
+        <hr>
+        <app-card *ngFor="let card of updateBoard.lists.doing" [title]="card.titulo" [content]="card.conteudo" [list]="card.lista" [id]="card.id"></app-card>
+      </div>
+      <div class="col border pt-3">
+        <h2 class="text-center fs-5">Done</h2>
+        <hr>
+        <app-card *ngFor="let card of updateBoard.lists.done" [title]="card.titulo" [content]="card.conteudo" [list]="card.lista" [id]="card.id"></app-card>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,11 @@
+<div class="card col-10 col-sm-8 col-md-6 col-lg-4 mx-auto mt-5 p-4 ">  
+    <div class="input-group">
+        <span class="input-group-text"><fa-icon [icon]="faUser"></fa-icon></span>
+        <input type="text" name="username"  class="form-control text-center"   placeholder="Username" #logInUsername>
+    </div>
+    <div class="input-group mt-1">
+        <span class="input-group-text"><fa-icon  [icon]="faKey"></fa-icon></span>
+        <input type="password" name="password"  class="form-control text-center"   placeholder="Password" #logInPassword>
+    </div>
+    <button class='btn btn-outline-dark w-100 mt-3 mx-auto' (click)='logIn(logInUsername.value,logInPassword.value)'><fa-icon [icon]="faSignInAlt"></fa-icon>   Login</button>
+</div>
