@@ -9,7 +9,9 @@ Kanban board page built with angular using a node server.
 ## Setup
 ### Requirements
   Angular CLI: 13.0.3
+  
   Node: 14.18.1
+  
   Package Manager: yarn 1.22.17
   
 ### Server
