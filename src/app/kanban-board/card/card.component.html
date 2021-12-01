@@ -18,7 +18,7 @@
   <input type="text" name="title"  class="form-control card-header" [(ngModel)]='title'  placeholder="Title" #newTitleInput>
   <textarea id="card-content" name="content" class="form-control" [(ngModel)]='content'  #newContentInput aria-label="Content" placeholder="Content"></textarea>
   <div class='row justify-content-between'>
-    <div class='col text-start'><fa-icon  [icon]="faBan" (click)="editMode=false" ></fa-icon></div>
+    <div class='col text-start'><fa-icon  [icon]="faBan" (click)="editMode=false;updateBoard.update()" ></fa-icon></div>
     <div class='col text-end'><fa-icon  [icon]="faSave" (click)="updateCard(newTitleInput.value,newContentInput.value)"></fa-icon></div>
   </div>
 </div>
