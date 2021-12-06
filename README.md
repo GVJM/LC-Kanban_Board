@@ -2,7 +2,7 @@
 
 ## Description  
 
-Kanban board page built with angular using a node server.
+Kanban board page built with angular using a node server for storing changes. I didn't develop the node server!
 
 
 
